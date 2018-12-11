@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Document</title>
+    <style>
+    .box1 {
+        font-size: 20px;
+        width: 10em;
+        height: 10em;
+        background-color: #ccc;
+    }
+    
+    .box2 {
+        font-size: 30px;
+        width: 6.66667em;
+        /*当前大小 200px  / 1em大小30px  ==  6.6667em*/
+        height: 6.66667em;
+        background-color: hotpink;
+    }
+    /*em 相对自身  (自身的字体大小不统一 em单位大小也不统一)
+    rem 相对根元素 (根元素只有一个 rem单位大小相对比较统一)*/
+    
+    html {
+        font-size: 30px;
+    }
+    
+    .box3 {
+        font-size: 20px;
+        width: 10rem;
+        height: 10rem;
+        background-color: skyblue;
+    }
+    
+    .box4 {
+        font-size: 30px;
+        width: 10rem;
+        height: 10rem;
+        background-color: yellowgreen;
+    }
+    </style>
+</head>
+
+<body>
+    <!-- 	em 和 rem 相对单位  
+em: element相对当前元素的字体大小的单位 1em == 1当前元素的字体大小 默认 1em=16px
+rem: root element相对根元素(html)的字体大小的单位 1em == 1根元素的字体大小 默认1rem=16px -->
+    <div class="box1">
+        box1
+    </div>
+    <div class="box2">
+        box2
+    </div>
+    <div class="box3">
+        box3
+    </div>
+    <div class="box4">
+        box4
+    </div>
+</body>
+
+</html>
